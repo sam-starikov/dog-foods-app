@@ -1,6 +1,8 @@
 import './styles.css'
 
+/* COMPONENTS */
 import Header from '../Header/Header'
+import CardList from '../CardList/CardList'
 
 
 const App = () => {
@@ -11,7 +13,7 @@ const App = () => {
 			<main className="content container">
 				{/* Sort */}
 				<div className="content__cards">
-					{/* Cards */}
+					<CardList />
 				</div>
 			</main>
 			{/* Footer */}
