@@ -1,17 +1,12 @@
 import './styles.css'
 
-import Logo from '../Logo/Logo'
-import Search from '../Search/Search'
-
-
-const Header = () => {
+const Header = ({ children }) => {
 	return (
 
 		<header className='header'>
 			<div className="container">
 				<div className="header__wrapper">
-					<Logo />
-					<Search />
+					{children}
 				</div>
 			</div>
 		</header>

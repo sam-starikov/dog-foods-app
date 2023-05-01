@@ -1,23 +1,14 @@
 import './styles.css'
-import data from '../../assets/data.json'
 
 /* COMPONENTS */
 import Card from '../Card/Card'
 
-
-
-
-
-const CardList = () => {
+const CardList = ({ goods }) => {
 
 	return (
 		<div className='cards'>
-			{data.map(item => <Card  {...item} />)}
-
-
+			{goods.map((item, index) => <Card key={index.toString()}  {...item} />)}
 		</div>
-
-
 	)
 }
 
